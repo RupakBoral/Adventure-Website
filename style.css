@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.bckgrnd{
+    transform: translateZ(-40px) scale(6);
+}
+.frgrnd{
+    transform: translateZ(-27.6px) scale(4);
+}
+.bckgrnd, .frgrnd{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+h1{
+    font-size: 5rem;
+    position: absolute;
+    color: white;
+    top: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 7rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.635);   
+} 
+section{
+    background-color: rgba(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.description1{
+    padding: 4rem 2rem 0 2rem;
+    padding-bottom: 1rem;
+    font-family: "Trirong", serif;
+    font-size: 1rem;
+    
+}
+.description2{
+    padding: 0 2rem 0 2rem;
+    padding-bottom: 4rem;
+    font-family: "Trirong", serif;
+    font-size: 1rem;
+}
+.heading{
+    color: white;
+    font-size: 3rem;
+    padding-left: 2rem;
+    font-family: "Trirong", serif;
+    font-weight: 900;
+    padding-bottom: -2rem;
+}
+.bg{
+    background-size:cover;
+    background-attachment: fixed;
+    height: 20rem;
+    position: relative;
+    background-position: center;
+}
+.sport{
+    position: absolute;
+    background-color: rgba(46, 46, 46, 0.15);
+    /* color: rgb(37, 36, 36); */
+    color: white;
+    text-shadow: 0px 0px 1px;
+    font-family: Lato;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0.5rem;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-80px) translateY(-20px);
+}
+.bg1{
+    background-image: url(images/sport-1.jpg);
+}
+.bg2{
+    background-image: url(images/sport-2.jpg);
+}
+.bg3{
+    background-image: url(images/sport-3.jpg);
+}
